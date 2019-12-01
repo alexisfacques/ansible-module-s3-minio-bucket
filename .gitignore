@@ -1,0 +1,4 @@
+*.retry
+*.pyc
+.direnv
+.pytest_cache

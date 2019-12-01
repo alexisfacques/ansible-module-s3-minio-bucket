@@ -1,0 +1,12 @@
+galaxy_info:
+  author: Alexis Facques
+  description: Create MinIO S3 buckets with policy support
+  license: MIT
+  min_ansible_version: 2.4
+  galaxy_tags:
+    - s3
+    - minio
+    - bucket
+    - policy
+    - acl
+dependencies: []

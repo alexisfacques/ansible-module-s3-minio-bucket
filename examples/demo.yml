@@ -1,0 +1,18 @@
+- hosts: localhost
+  tasks:
+    - name: "This should create a bucket"
+      minio_bucket:
+        s3_url: http://localhost:9000
+        name: my-bucket
+        access_key: my-access-key
+        secret_key: my-secret-key
+        state: present
+        policy: read-only
+
+    - name: "This should delete a bucket"
+      minio_bucket:
+        s3_url: http://localhost:9000
+        name: my-bucket
+        access_key: my-access-key
+        secret_key: my-secret-key
+        state: absent
