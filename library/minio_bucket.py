@@ -65,7 +65,7 @@ import urllib3
 import json
 
 from minio import Minio
-from minio.error import ResponseError
+from minio.error import S3Error
 
 class UncheckedException(Exception):
    pass
