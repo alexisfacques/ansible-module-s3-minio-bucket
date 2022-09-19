@@ -225,7 +225,7 @@ def main():
         if module.params["state"] == "absent":
             if module.check_mode:
                 module.exit_json(
-                    faised=False,
+                    failed=False,
                     changed=client.bucket_exists(bucket_name)
                 )
 
@@ -238,7 +238,7 @@ def main():
 
         else:
             if module.check_mode:
-                module.exit_json(faised=False, changed=True)
+                module.exit_json(failed=False, changed=True)
 
             if not client.bucket_exists(bucket_name):
                 client.make_bucket(bucket_name)
